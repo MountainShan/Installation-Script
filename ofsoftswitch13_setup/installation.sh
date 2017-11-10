@@ -1,0 +1,15 @@
+sudo apt-get install -y cmake libpcap-dev libxerces-c3.1 libxerces-c-dev libpcre3 libpcre3-dev flex bison pkg-config autoconf libtool libboost-dev;
+cd ~;
+git clone https://github.com/netgroup-polito/netbee.git;
+cd netbee/src;
+cmake .;
+make;
+sudo cp ../bin/libn*.so /usr/local/lib;
+sudo ldconfig;
+cd ~/;
+git clone https://github.com/CPqD/ofsoftswitch13;
+cd ofsoftswitch13;
+./boot.sh;
+./configure;
+make;
+sudo make install;
