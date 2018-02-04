@@ -1,0 +1,14 @@
+[[local|localrc]]
+HOST_IP=172.16.0.10
+MULTI_HOST=True
+
+DEST=/opt/stack
+DATA_DIR=$DEST/data
+LOGFILE=$DATA_DIR/logs/stack.log
+SCREEN_LOGDIR=$DATA_DIR/logs
+
+ADMIN_PASSWORD=openstack
+DATABASE_PASSWORD=openstack
+RABBIT_PASSWORD=openstack
+SERVICE_PASSWORD=openstack
+
