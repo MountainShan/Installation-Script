@@ -5,11 +5,13 @@ set -x
 # Exit on errors.
 set -e
 
-BMV2_COMMIT="master"  # Apr 24, 2019
-PI_COMMIT="master"    # Apr 24, 2019
-P4C_COMMIT="master"   # Apr 24, 2019
-PROTOBUF_COMMIT="v3.2.0"
-GRPC_COMMIT="v1.3.2"
+BMV2_COMMIT="master"
+PI_COMMIT="master"  
+P4C_COMMIT="master"
+#PROTOBUF_COMMIT="v3.2.0"
+#GRPC_COMMIT="v1.3.2"
+PROTOBUF_COMMIT="v3.6.1"
+GRPC_COMMIT="v1.17.2"
 
 NUM_CORES=`grep -c ^processor /proc/cpuinfo`
 
